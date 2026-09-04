@@ -53,24 +53,21 @@ shopping action is not confused with a text response.
 
 ## The experiment's architecture
 
-```text
-┌────────────────────┐       ┌───────────────────────────┐
-│ TUI / Rich          │──────▶│ Strands Agent + Claude     │
-│ request in English  │       │ decides which action to use│
-└────────────────────┘       └─────────────┬─────────────┘
-                                           │ browser tool
-                                           ▼
-                              ┌───────────────────────────┐
-                              │ AgentCoreBrowser           │
-                              │ Playwright over CDP        │
-                              └─────────────┬─────────────┘
-                                            │ remote session
-                         ┌──────────────────┴──────────────────┐
-                         ▼                                     ▼
-               ┌──────────────────┐                  ┌────────────────┐
-               │ BM Supermercados │                  │ Live View DCV  │
-               │ real store       │                  │ localhost      │
-               └──────────────────┘                  └────────────────┘
+```mermaid
+flowchart LR
+    tui["TUI / Rich<br/>Request in English"]
+    agent["Strands Agent + Claude<br/>Decides which action to use"]
+    browser["AgentCore Browser<br/>Playwright over CDP"]
+    bm["BM Supermercados<br/>Real store"]
+    live["Live View DCV<br/>localhost"]
+    human["Person"]
+
+    tui --> agent
+    agent -->|browser tool| browser
+    browser -->|remote session| bm
+    browser -->|DCV stream| live
+    human -->|manual login and confirmation| live
+    live -->|take/release control| browser
 ```
 
 There are two different channels to the same browser:
