@@ -1,0 +1,46 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments and local package/build output
+.venv/
+venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# AgentCore/DCV downloaded browser assets and local captures
+.dcv/
+screenshots/
+*.har
+
+# Logs and local runtime files
+*.log
+*.pid
+
+# macOS / editor files
+.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+*.swo
+
+# VS Code workspace settings and launch configurations
+.vscode/
+
+# Keep pyproject.toml and poetry.lock tracked.

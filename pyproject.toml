@@ -1,0 +1,21 @@
+[project]
+name = "bm-agentcore-shopping-poc"
+version = "0.1.0"
+description = "TUI minimalista para preparar una compra de BM con Strands y AgentCore Browser"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "bedrock-agentcore>=1.11.0,<2.0.0",
+    "strands-agents>=1.25.0,<2.0.0",
+    "strands-agents-tools>=0.2.20,<0.3.0",
+    "nest-asyncio>=1.6.0,<2.0.0",
+    "playwright>=1.55.0,<2.0.0",
+    "rich>=14.1.0,<15.0.0",
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
