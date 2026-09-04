@@ -16,6 +16,14 @@ This is not a scraping bot. It is not an automated checkout system either. It is
 a conversational interface in front of a browser tool, with a human boundary
 at the point where an action starts to have consequences.
 
+This is what the browser looks like after a search and a couple of confirmed
+items have been added to the cart:
+
+![BM online shopping cart after a conversational search](img/image.png)
+
+The screenshot is only a visual reference for the PoC. Credentials and payment
+are still entered manually in Live View and are never part of the repository.
+
 ## The idea
 
 The first version had a custom tool built with synchronous Playwright. The agent

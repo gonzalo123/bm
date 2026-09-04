@@ -28,6 +28,8 @@ dist/
 .dcv/
 screenshots/
 img/
+!img/
+!img/image.png
 *.har
 
 # Logs and local runtime files
