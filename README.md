@@ -221,3 +221,11 @@ The interesting part of this PoC is that separation:
 I did not try to build a grocery platform. I tried to build a small interface for
 a task I already know how to do manually, and observe where the agent helps and
 where I need a boundary.
+
+## Notes
+
+This README is fully AI-generated (based on posts from gonzalo123.com), except for this section. That said, every text I publish — whether AI-assisted or not — is ultimately mine. I have, at the very least, read it, reviewed it, and approved it before publishing.
+
+AI-generated content is a great tool, but responsibility cannot be delegated to it. I remain accountable for the accuracy, context, and ideas I publish.
+
+I'm still human.
