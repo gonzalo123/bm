@@ -27,6 +27,7 @@ dist/
 # AgentCore/DCV downloaded browser assets and local captures
 .dcv/
 screenshots/
+img/
 *.har
 
 # Logs and local runtime files
